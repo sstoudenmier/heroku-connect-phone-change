@@ -73,7 +73,7 @@
     </nav>
 
     <div class="container">
-        <form id="phoneChangerForm" method="post" style="width: 400px">
+        <form id="phoneChangerForm" style="width: 400px">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">Create and Update Contacts</h3>
@@ -106,11 +106,11 @@
                         <span class="sr-only">Error:</span>
                         <span id="errorMessage"></span>
                     </div>
-                    <button type="submit" class="btn btn-primary" formaction="/createContact">Create New Contact</button>
-                    </br>
-                    <button type="submit" class="btn btn-primary" formaction="/updatePhone">Update Phone Number</button>
-                    </br>
-                    <button type="submit" class="btn btn-primary" formaction="/updateEmail">Update Email Address</button>
+                    <button type="submit" class="btn btn-primary" formaction="/createContact" formmethod="post">Create New Contact</button>
+                    </br></br>
+                    <button type="submit" class="btn btn-primary" formaction="/updatePhone" formmethod="post">Update Phone Number</button>
+                    </br></br>
+                    <button type="submit" class="btn btn-primary" formaction="/updateEmail" formmethod="post">Update Email Address</button>
                 </div>
             </div>
         </form>
