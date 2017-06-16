@@ -17,7 +17,7 @@ app.post('/createContact', function(req, res) {
         conn.query(
             'INSERT INTO salesforce.Contact (Phone, MobilePhone, FirstName, LastName, Email) VALUES ($1, $2, $3, $4, $5)',
             [req.body.phone.trim(), req.body.phone.trim(), req.body.firstName.trim(), req.body.lastName.trim(), req.body.email.trim()],
-            function(err, result) {}
+            function(err, result) {
                 done();
                 res.json(result);
             }
